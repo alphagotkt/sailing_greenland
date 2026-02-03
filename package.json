@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npm install -g wrangler && vite build",
+    "build": "echo 'STARTING CUSTOM BUILD' && vite build && npx wrangler pages deploy dist",
     "lint": "eslint .",
     "preview": "vite preview"
   },
